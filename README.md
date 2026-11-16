@@ -1,6 +1,6 @@
 Installation
 
-bash <(curl -Ls https://raw.githubusercontent.com/ВАШ_АККАУНТ/ВАШ_РЕПО/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/krocos/vless/main/install.sh)
 
 With params (note, port, SNI)
 
