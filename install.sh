@@ -59,7 +59,13 @@ cat <<EOF | tee /etc/xray/config.json
         }
       }
     }
-  ]
+  ],
+  "outbounds":[
+    {
+      "protocol":"freedom",
+      "tag":"direct"
+    }
+   ]
 }
 EOF
 
