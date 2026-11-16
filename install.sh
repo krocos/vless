@@ -8,7 +8,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 apt update -y
-apt install openssl unzip curl wget -y
+apt install openssl unzip wget -y
 
 REMARK="${1:-double_bouble_trouble}"
 PORT="${2:-443}"
