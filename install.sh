@@ -28,8 +28,8 @@ xray version
 
 UUID=$(xray uuid)
 KEYS=$(xray x25519)
-PRIVATE_KEY=$(echo "$KEYS" | grep "Private key" | awk '{print $3}')
-PUBLIC_KEY=$(echo "$KEYS" | grep "Public key" | awk '{print $3}')
+PRIVATE_KEY=$(echo "$KEYS" | grep "PrivateKey" | awk '{print $2}')
+PUBLIC_KEY=$(echo "$KEYS" | grep "Password" | awk '{print $3}')
 SHORT_ID=$(openssl rand -hex 8)
 
 mkdir -p /etc/xray
