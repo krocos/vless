@@ -20,8 +20,9 @@ if [ -z "$PUBLIC_IP" ]; then
   exit 1
 fi
 
+rm -f Xray-linux-64.zip
 wget -q https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
-unzip Xray-linux-64.zip
+unzip -o Xray-linux-64.zip xray
 
 mv -f xray /usr/local/bin
 xray version
