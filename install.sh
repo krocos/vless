@@ -101,5 +101,6 @@ VLESS_URL="vless://$UUID@$PUBLIC_IP:$PORT?encryption=none&flow=xtls-rprx-vision&
 echo ""
 echo "Ссылка:"
 echo "$VLESS_URL"
+echo ""
 echo "Она же в файле ~/xray_url.txt"
 echo "$VLESS_URL" > ~/xray_url.txt
